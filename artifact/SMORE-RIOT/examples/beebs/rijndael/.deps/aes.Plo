@@ -1,0 +1,7 @@
+aes.lo: aes.c /usr/include/stdc-predef.h aes.h aestab.h
+
+/usr/include/stdc-predef.h:
+
+aes.h:
+
+aestab.h:

@@ -1,0 +1,2 @@
+CPU = msp430
+CPU_MODEL = msp430f1612

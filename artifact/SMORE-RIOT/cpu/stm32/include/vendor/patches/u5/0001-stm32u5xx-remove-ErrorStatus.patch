@@ -1,0 +1,29 @@
+From 4c75a6ccf6d6bed95d71c1d7ad3638553d62ff9d Mon Sep 17 00:00:00 2001
+From: Alexandre Abadie <alexandre.abadie@inria.fr>
+Date: Fri, 25 Aug 2023 09:37:16 +0200
+Subject: [PATCH 1/1] stm32u5xx: remove ErrorStatus
+
+---
+ Include/stm32u5xx.h | 6 ------
+ 1 file changed, 6 deletions(-)
+
+diff --git a/Include/stm32u5xx.h b/Include/stm32u5xx.h
+index db03fce..3f8102d 100644
+--- a/Include/stm32u5xx.h
++++ b/Include/stm32u5xx.h
+@@ -156,12 +156,6 @@ typedef enum
+ } FunctionalState;
+ #define IS_FUNCTIONAL_STATE(STATE) (((STATE) == DISABLE) || ((STATE) == ENABLE))
+ 
+-typedef enum
+-{
+-  SUCCESS = 0,
+-  ERROR = !SUCCESS
+-} ErrorStatus;
+-
+ /**
+   * @}
+   */
+-- 
+2.39.2
+

@@ -1,0 +1,13 @@
+USEMODULE += tinydtls
+
+USEMODULE += memarray
+USEMODULE += hashes
+USEMODULE += random
+USEMODULE += tinydtls_aes
+USEMODULE += tinydtls_ecc
+USEMODULE += ztimer_msec
+
+ifneq (,$(filter sock_dtls,$(USEMODULE)))
+  USEMODULE += tinydtls_sock_dtls
+  USEMODULE += ztimer_usec
+endif

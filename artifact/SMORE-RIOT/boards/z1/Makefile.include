@@ -1,0 +1,7 @@
+# setup flash tool
+PROGRAMMER ?= goodfet
+GOODFET_FLAGS ?= --z1
+
+PROGRAMMERS_SUPPORTED += goodfet
+
+include $(RIOTBOARD)/common/msp430/Makefile.include

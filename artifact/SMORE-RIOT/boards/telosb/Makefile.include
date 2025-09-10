@@ -1,0 +1,7 @@
+# flash tool configuration
+PROGRAMMER ?= goodfet
+GOODFET_FLAGS ?= --telosb
+
+PROGRAMMERS_SUPPORTED += goodfet
+
+include $(RIOTBOARD)/common/msp430/Makefile.include

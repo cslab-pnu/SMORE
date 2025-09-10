@@ -1,0 +1,13 @@
+libsglib_arrayheapsort_la-arraysort.lo: arraysort.c \
+ /usr/include/stdc-predef.h ../../support/support.h ../../config.h \
+ ../../config/x86_64/chips/generic/chipsupport.h sglib.h
+
+/usr/include/stdc-predef.h:
+
+../../support/support.h:
+
+../../config.h:
+
+../../config/x86_64/chips/generic/chipsupport.h:
+
+sglib.h:

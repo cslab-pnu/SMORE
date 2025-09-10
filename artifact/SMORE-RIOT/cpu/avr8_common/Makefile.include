@@ -1,0 +1,14 @@
+# include module specific includes
+INCLUDES += -I$(RIOTCPU)/avr8_common/include \
+            -isystem$(RIOTCPU)/avr8_common/avr_libc_extra/include \
+            -isystem$(RIOTCPU)/avr8_common/avr_libc_extra/include/vendor
+
+ifneq (,$(filter printf_float,$(USEMODULE)))
+  LINKFLAGS += -Wl,-u,vfprintf -lprintf_flt -lm
+endif
+
+# Add aliases for flash_printf, flash_fprintf, flash_snprintf:
+LINKFLAGS += -Wl,--defsym=flash_printf=printf_P
+LINKFLAGS += -Wl,--defsym=flash_fprintf=fprintf_P
+LINKFLAGS += -Wl,--defsym=flash_snprintf=snprintf_P
+include $(RIOTMAKE)/arch/avr8.inc.mk

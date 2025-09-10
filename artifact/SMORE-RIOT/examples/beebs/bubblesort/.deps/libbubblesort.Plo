@@ -1,0 +1,11 @@
+libbubblesort.lo: libbubblesort.c /usr/include/stdc-predef.h \
+ ../../support/support.h ../../config.h \
+ ../../config/x86_64/chips/generic/chipsupport.h
+
+/usr/include/stdc-predef.h:
+
+../../support/support.h:
+
+../../config.h:
+
+../../config/x86_64/chips/generic/chipsupport.h:

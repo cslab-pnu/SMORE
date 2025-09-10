@@ -1,0 +1,3 @@
+Requires the STM32 Nucleo-L552ZE-Q development board (Cortex-M33, ARMv8-M).
+
+Public cloud infrastructure (e.g., CloudLab, Chameleon, FABRIC) is not applicable due to the hardware requirement.

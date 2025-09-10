@@ -1,0 +1,13 @@
+# we use shared STM32 configuration snippets
+INCLUDES += -I$(RIOTBOARD)/common/stm32/include
+
+# this board uses openocd with st-link
+PROGRAMMER ?= openocd
+OPENOCD_DEBUG_ADAPTER ?= stlink
+STLINK_VERSION ?= 2
+
+# Tell renode on which UART stdio is available
+RENODE_SYSBUS_UART ?= sysbus.uart2
+
+# openocd programmer is supported
+PROGRAMMERS_SUPPORTED += openocd
